@@ -5,14 +5,16 @@ import Board from './board.model';
 function handleError(res, statusCode) {
   statusCode = statusCode || 500;
   return function(err) {
-    res.status(statusCode).send(err);
+    res.status(statusCode).json({
+      statusText : "Fail"
+    });
   };
 }
 
 
 export function show(req, res, next){
 
-  let boardID = req.body.boardiD;
+  let boardID = String(req.params.boardID);
 
   Board.findOne({boardID})
   .then((board) => {
@@ -24,13 +26,14 @@ export function show(req, res, next){
 
 export function list(req, res, next){
 
-  let boardID = req.body.boardiD;
+  let pageNumber = req.params.pageNumber;
 
-  Board.find({}).sort({"boardCreateTime" : -1}).limit(4)
+  Board.find().sort({"boardCreateTime" : -1}).skip(1 + ((pageNumber -1) * 4)).limit(4)
   .then((board) => {
     res.status(200).json(board);
   })
   .catch(handleError(res));
+
 }
 
 export function create(req, res, next){
