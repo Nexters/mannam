@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 20 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_favor_deact</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="article_view_page" transform="translate(-314.000000, -78.000000)" fill="#F7F7F7">
+            <g id="article_content_top" transform="translate(36.000000, 78.000000)">
+                <g id="favor_icon_norm" transform="translate(278.000000, 0.000000)">
+                    <path d="M0,1.99161703 C0,0.891677316 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.89784041 20,1.99161703 L20,28.008383 C20,29.1083227 19.2646761,29.5036564 18.3487034,28.8853748 L11.6512966,24.3646252 C10.7393107,23.7490347 9.26467612,23.7463436 8.34870338,24.3646252 L1.65129662,28.8853748 C0.739310677,29.5009653 0,29.1021596 0,28.008383 L0,1.99161703 Z" id="Rectangle-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
