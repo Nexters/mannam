@@ -29,32 +29,3 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
-
------------------------------------------------------------------------------------------
-Mannam install
-
-Mongodb install
-Robomongo install
-
-Node.js Project install
-1. nodejs 설치 (v5.11.1)
-2. sudo npm install -g grunt (v1.0.1)
-3. sudo npm install -g yo (v1.8.4)
-4. sudo npm install -g generator-angular-fullstack (v3.6.1)
-5. sudo npm install -g grunt-cli
-6. sudo npm install -g bower
-
-7. create directory
-8. yo angular-fullstack
-     - TypeScript
-     - CSS
-     - uirouter
-     - bootstrap y
-     - bootstrap ui y
-     - MongoDB
-     - auth y
-     - facebook
-     - socket.io n
-     - grunt
-
-https://startbootstrap.com/template-overviews/simple-sidebar/

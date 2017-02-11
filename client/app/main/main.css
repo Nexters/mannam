@@ -1,27 +1,87 @@
-.thing-form {
-  margin: 20px 0;
+*글자, 높이 관련 CSS는 임시로 설정*/
+
+/*app*/
+@media screen and (max-width: 767px){
+
+   .card-letter{
+
+   }
+   .card-bottom span{
+      line-height: 20px;
+   }
+   .card-img{
+      width:20px;
+      height:20px;
+   }
+
+   .card-content{
+      padding:5px;
+   }
 }
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
+/*web*/
+@media screen and (min-width : 1200px){
+
+   .card-letter{
+      text-indent: 30px;
+   }
+   .card-img{
+      width:50px;
+      height:50px;
+   }
 }
 
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+.card-boundary{
+   box-sizing: border-box;
+     display: -webkit-box;
+     display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: row;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+   margin : 20px auto;
+   padding : 0px;
 }
 
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
+.card-color{
+   background-color : #F2F2F2;
 }
 
-.navbar-text {
-  margin-left: 15px;
+.card-content{
 }
+
+.card-letter{
+   line-height: 50px;
+}
+
+.card-favorite{
+   float:right;
+   padding:0px;
+}
+
+.card-img{
+   float:left;
+}
+
+.card-bottom{
+   padding:0px;
+}
+
+/*
+#location-img{
+   float:left;
+   background: url("../../assets/images/location.png");
+}
+
+#time-img{
+   float:left;
+   background: url("../../assets/images/time.png");
+}
+
+#favorite-img{
+   float:left;
+   background: url("../../assets/images/favorite.jpg");
+}
+*/
