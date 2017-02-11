@@ -8,7 +8,7 @@ constructor($http) {
   this.$http = $http;
   this.awesomeThings = [];
 
- this.notices = [
+  this.notices = [
     {
       type : '#4EBEDA',
       target : '넥스터즈 전체', 
