@@ -2,11 +2,10 @@
 
 (function() {
 
-class MainController {
+class NoticeController {
 
 constructor($http) {
   this.$http = $http;
-  this.awesomeThings = [];
 
   this.notices = [
     {
@@ -49,22 +48,12 @@ constructor($http) {
     });
   }
 
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
-    }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
-  }
 }
 
 angular.module('mannamApp')
-  .component('main', {
-    templateUrl: 'app/main/main.html',
-    controller: MainController
+  .component('notice', {
+    templateUrl: 'app/notice/notice.html',
+    controller: NoticeController
   });
 
 })();
