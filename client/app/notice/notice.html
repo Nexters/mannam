@@ -1,0 +1,29 @@
+<div class="container" ng-repeat="notice in $ctrl.notices">
+    <div class="card-boundary col-lg-10 col-xs-12">
+
+        <div class="card-color col-lg-1 col-xs-1" style = "background-color : {{ notice.type }};" ></div>
+
+        <div class="card-content col-lg-12 col-xs-12">
+            <div class="card-title col-lg-12 col-xs-12">
+                <div class="card-letter"> to. {{notice.target}} </div>
+                <div class="card-letter"> {{notice.title}} </div>
+                <div class="card-letter"> from. {{notice.writer}} </div>
+            </div>
+
+            <div class="card-bottom col-lg-12 col-xs-12">
+                <div class="col-lg-6 col-xs-5">
+                    <img class="card-img" src = "../assets/images/location.png">
+                    <span class="card-letter"> {{notice.location}} </span>
+                </div>
+                <div class="col-lg-6 col-xs-7">
+                    <img class="card-img" src = "../assets/images/time.png">
+                    <span class="card-letter"> {{notice.time}} </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-favorite col-lg-1 col-xs-1">
+            <img class="card-img" src="../assets/images/favorite-btn.jpg" aria-label="favorite">
+        </div>
+    </div>
+</div>

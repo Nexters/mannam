@@ -51,11 +51,10 @@ export default function(app) {
    * Lusca - express server security
    * https://github.com/krakenjs/lusca
    */
-   /*
-  if ('test' !== env) {
+  /*if ('test' !== env) {
     app.use(lusca({
       csrf: {
-        angular: false
+        angular: true
       },
       xframe: 'SAMEORIGIN',
       hsts: {
@@ -63,11 +62,10 @@ export default function(app) {
         includeSubDomains: true,
         preload: true
       },
-      xssProtection: false
+      xssProtection: true
     }));
   }
-  */
-
+*/
   app.set('appPath', path.join(config.root, 'client'));
 
   if ('production' === env) {
