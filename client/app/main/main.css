@@ -69,6 +69,30 @@
    padding:0px;
 }
 
+.card-title{
+  float:left;
+  display: block;
+}
+
+.card-content{
+  float:left;
+  display: block;
+}
+
+.card-content-content{
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-break:break-all;border:none;
+  background-color : #FFFFFF;
+
+}
+
+
+
+
 /*
 #location-img{
    float:left;

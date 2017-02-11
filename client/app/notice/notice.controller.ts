@@ -7,47 +7,23 @@ class NoticeController {
 constructor($http) {
   this.$http = $http;
 
-  this.notices = [
-    {
+  this.notice = {
       type : '#4EBEDA',
       target : '넥스터즈 전체', 
-      title : '1월 3주차 정기모임 안내',
-      writer : '넥스터즈 CEO',
+      title : '1월 3주차 정기모임 안내 만남팀 멤버 전격 영입',
+      writer : 'Nexters CEO',
       location : '창의재단',
-      time : '2017.01.04 | 17:04'
-    },
-    {
-      type : '#4DB0A6',
-      target : 'mannam', 
-      title : '이번주 미팅 공지',
-      writer : '넥스터즈 CEO',
-      location : '아지트',
-      time : '2017.01.04'
-    },
-    {
-      target : 'somebody', 
-      title : 'ux 스터디 함께할 친구들',
-      writer : 'N10 우종희',
-      location : '',
-      time : ''
-    },
-    {
-      target : 'somebody', 
-      title : '서비스를 위한 설문조사',
-      writer : 'N10 우종희',
-      location : '',
-      time : ''
-    }
-  ];
-}
+      date : '2017. 01. 04',
+      time : '17.03.12 06:00',
+      content : '안녕하세요 1주차 미션 \n -프로젝트 일정 짜기(개발 및 디자인 일정) \n - 개발 : 적용기술 확정 및 앱 구체적 설계'
+    };
+  }
 
   $onInit() {
     this.$http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-      this.socket.syncUpdates('thing', this.awesomeThings);
+
     });
   }
-
 }
 
 angular.module('mannamApp')
