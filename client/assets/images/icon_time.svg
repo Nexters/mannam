@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_time</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="6.5" cy="6.5" rx="6.5" ry="6.5"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="13" height="13" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="article_view_page" transform="translate(-36.000000, -181.000000)">
+            <g id="article_content_top" transform="translate(36.000000, 78.000000)">
+                <g id="icon_time" transform="translate(0.000000, 103.000000)">
+                    <g id="Group-2">
+                        <path d="M6.5,6.96428571 L6.5,6.5 L11.1428571,6.5 L11.1428571,6.96428571 L6.5,6.96428571 Z M6.5,1.85714286 L6.96428571,1.85714286 L6.96428571,6.5 L6.5,6.5 L6.5,1.85714286 Z" id="Combined-Shape" fill="#000000"></path>
+                        <use id="Oval-3" stroke="#000000" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

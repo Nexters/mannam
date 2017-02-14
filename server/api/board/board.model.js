@@ -24,14 +24,11 @@ var boardSchema = new mongoose.Schema({
 
 });
 
-boardSchema.pre("save", (next) => {
-
-  if(!this.boardID){
-    this.boardID = 1;
-  }
-
-  return next();
-});
+boardSchema
+  .pre('save', function(next) {
+    this.boardID = "1";
+    next();
+  });
 
 
 export default mongoose.model("Board", boardSchema);
