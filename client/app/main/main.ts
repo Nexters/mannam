@@ -7,4 +7,5 @@ angular.module('mannamApp')
         url: '/',
         template: '<main></main>'
       });
+      
   });
