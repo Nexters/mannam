@@ -15,10 +15,16 @@
       font-size:11px;
       line-height: 11px;
       margin-bottom : 5px;
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 700;  
    }
    .card-letter-title{
       font-size:18px;
       line-height:22px;
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 700; 
    }
 
    .card-favor-img{
@@ -46,12 +52,18 @@
    .card-letter{
       font-size:11px;
       line-height: 13px;
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 100; 
    }
 
    .card-letter-writer{
       font-size:11px;
       line-height:17px;
       float:right;
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 100; 
    }
 
    .card-body{
@@ -62,6 +74,10 @@
    .card-content{
       font-size:14px;
       line-height : 22.5px; 
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 300; 
+
    }
 }
 
@@ -155,7 +171,8 @@
 }
 
 .notice-confirm-button{
-
+  height:50px;
+  background-image: url('../assets/images/confirm-btn.png');
 }
 
 
