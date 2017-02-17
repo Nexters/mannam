@@ -1,0 +1,44 @@
+/*app*/
+@media screen and (max-width: 767px){
+	.card-body{
+      margin-top:10px;
+      padding:5px;
+   }
+
+   .card-content{
+      font-size:14px;
+      line-height : 22.5px; 
+      font-family: 'Noto Sans KR'; 
+      font-style: normal; 
+      font-weight: 300; 
+   }
+
+   .notice-confirm-button{
+	  height:50px;
+	  background-image: url("/assets/images/noti-confirm-btn.svg");
+	  background-repeat: no-repeat;
+	}
+}
+
+/*web*/
+@media screen and (min-width : 1200px){
+
+
+
+}
+
+.card-title-line{
+	border-bottom: solid 2px #d7d7d7; 
+}
+
+.card-content{
+	float:left;
+	display: block;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-break:break-all;border:none;
+	background-color : #FFFFFF;
+}

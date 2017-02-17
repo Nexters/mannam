@@ -18,25 +18,25 @@
                         </div>
                     </div>
 
-                    <div class="card-title-bottom col-lg-12 col-xs-12">
-                        <div class="col-lg-4 col-xs-4">
-                            <img class="card-img" src = "../assets/images/icon_time.svg">
-                            <span class="card-letter">{{notice.date}}</span>
-                        </div>
+                    <div class="card-title-line col-lg-12 col-xs-12">
+                        <div class="card-title-bottom col-lg-12 col-xs-12">
+                            <div class="col-lg-4 col-xs-4">
+                                <img class="card-img" src = "../assets/images/icon_time.svg">
+                                <span class="card-letter">{{notice.date}}</span>
+                            </div>
 
-                        <div class="col-lg-4 col-xs-4">
-                            <img class="card-img" src = "../assets/images/icon_map_pin.svg">
-                            <span class="card-letter">{{notice.location}}</span>
+                            <div class="col-lg-4 col-xs-4">
+                                <img class="card-img" src = "../assets/images/icon_map_pin.svg">
+                                <span class="card-letter">{{notice.location}}</span>
+                            </div>
+                            
+                            <div class="col-lg-4 col-xs-4">
+                                <div class="card-letter-writer">{{notice.writer}}</div>
+                                <div class="card-letter-writer">{{notice.time}}</div>
+                            </div>
                         </div>
-                        
-                        <div class="col-lg-4 col-xs-4">
-                            <div class="card-letter-writer">{{notice.writer}}</div>
-                            <div class="card-letter-writer">{{notice.time}}</div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
+                    </div>       
+                </div>       
             </div>
 
             <div class="card-body col-lg-12 col-xs-12">
@@ -48,7 +48,7 @@
         </div>
 
     </div>
-
-    <button class="notice-confirm-button col-lg-10 col-xs-12"/>
-
+    <form class="form" name="form" ng-submit="vm.noticeConfirm(form)" novalidate>
+        <button type="submit" class="notice-confirm-button col-lg-10 col-xs-12"/>
+    </form>
 </div>

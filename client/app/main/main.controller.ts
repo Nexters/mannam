@@ -10,34 +10,36 @@ constructor($http) {
 
   this.notices = [
     {
-      type : '#4EBEDA',
-      target : '넥스터즈 전체', 
-      title : '1월 3주차 정기모임 안내',
-      writer : '넥스터즈 CEO',
-      location : '창의재단',
-      time : '2017.01.04 | 17:04'
+        type : '#4EBEDA',
+        category : '넥스터즈 전체', 
+        title : '1월 3주차 정기모임 안내',
+        writer : 'Nexters CEO',
+        location : '마루180',
+        date : '17.01.04 07:00',
+        time : '17.03.12 06:00'
     },
     {
-      type : '#4DB0A6',
-      target : 'mannam', 
-      title : '이번주 미팅 공지',
-      writer : '넥스터즈 CEO',
-      location : '아지트',
-      time : '2017.01.04'
+        type : '#4EBEDA',
+        category : 'MANNAM 팀', 
+        title : '이번주에도 아지트에서 모입니다.',
+        writer : '만남대장',
+        location : '창의재단',
+        date : '17.01.04 07:00',
+        time : '17.03.12 06:00'
     },
     {
-      target : 'somebody', 
-      title : 'ux 스터디 함께할 친구들',
-      writer : 'N10 우종희',
-      location : '',
-      time : ''
+        type : '#4EBEDA',
+        category : '개발자', 
+        title : '개발 스터디 멤버를 구하고 있습니다.',
+        writer : '김넥터',
+        time : '17.03.12 06:00'
     },
     {
-      target : 'somebody', 
-      title : '서비스를 위한 설문조사',
-      writer : 'N10 우종희',
-      location : '',
-      time : ''
+        type : '#4EBEDA',
+        category : '자유글', 
+        title : '집에 같이 가실분 찾아요',
+        writer : '김넥터',
+        time : '17.03.12 06:00'
     }
   ];
 }

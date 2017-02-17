@@ -11,140 +11,96 @@
     margin-top : 20px;
     margin-bottom : 19px;
   }
-   .card-letter-category{
-      font-size:11px;
-      line-height: 11px;
-      margin-bottom : 5px;
-      font-family: 'Noto Sans KR'; 
-      font-style: normal; 
-      font-weight: 700;  
+  
+  .card-letter-category{
+    font-size:11px;
+    line-height: 11px;
+    margin-bottom : 5px;
+    font-family: 'Noto Sans KR'; 
+    font-style: normal; 
+    font-weight: 700;  
    }
-   .card-letter-title{
-      font-size:18px;
-      line-height:22px;
-      font-family: 'Noto Sans KR'; 
-      font-style: normal; 
-      font-weight: 700; 
-   }
+  .card-letter-title{
+    font-size:18px;
+    line-height:22px;
+    font-family: 'Noto Sans KR'; 
+    font-style: normal; 
+    font-weight: 700; 
+  }
+  .card-favor-img{
+    margin-top:-4px;
+    width:20px;
+    height:30px;
+  }
 
-   .card-favor-img{
-      margin-top:-4px;
-      width:20px;
-      height:30px;
-   }
+  .card-title-bottom{
+    padding:0;
+    height:43px;
+  }
 
-   .card-title-bottom{
-      padding:0;
-      height:43px;
-      border-bottom: solid 2px #d7d7d7; 
-   }
+  .card-title-bottom div{
+    padding:0;
+  }
 
-   .card-title-bottom div{
-      padding:0;
-    }
+  .card-img{
+    width:13px;
+    height:13px;
+  }
 
-   .card-img{
-      width:13px;
-      height:13px;
-      margin-right : 5px;
-   }
+  .card-letter{
+    font-size:11px;
+    line-height: 13px;
+    font-family: 'Noto Sans KR'; 
+    font-style: normal; 
+    font-weight: 100; 
+  }
 
-   .card-letter{
-      font-size:11px;
-      line-height: 13px;
-      font-family: 'Noto Sans KR'; 
-      font-style: normal; 
-      font-weight: 100; 
-   }
-
-   .card-letter-writer{
-      font-size:11px;
-      line-height:17px;
-      float:right;
-      font-family: 'Noto Sans KR'; 
-      font-style: normal; 
-      font-weight: 100; 
-   }
-
-   .card-body{
-      margin-top:10px;
-      padding:5px;
-   }
-
-   .card-content{
-      font-size:14px;
-      line-height : 22.5px; 
-      font-family: 'Noto Sans KR'; 
-      font-style: normal; 
-      font-weight: 300; 
-
-   }
+  .card-letter-writer{
+    display: inline-block;
+    font-size:11px;
+    line-height:17px;
+    float:right;
+    font-family: 'Noto Sans KR'; 
+    font-style: normal; 
+    font-weight: 100; 
+  }
+   
 }
 
 /*web*/
 @media screen and (min-width : 1200px){
 
-   .card-letter{
-      text-indent: 30px;
-   }
-   .card-img{
-      width:50px;
-      height:50px;
-   }
+  .card-letter{
+    text-indent: 30px;
+  }
+  .card-img{
+    width:50px;
+    height:50px;
+  }
 }
 
 .card-boundary{
-   box-sizing: border-box;
-     display: -webkit-box;
-     display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: row;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-   margin : 20px auto;
-   padding : 0px;
-
-   font-family: 'Noto Sans KR';
-}
-
-.card-border{
-  padding:1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: row;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  margin : 20px auto;
+  padding : 0px;
 }
 
 .card-color{
-   background-color : #F2F2F2;
-   width : 1.2%;
-}
-
-.card-bottom div{
-  padding:0px;
-}
-
-
-
-
-
-
-.card-content{
+  background-color : #F2F2F2;
+  width : 1.2%;
 }
 
 .card-favorite{
-   float:right;
-   padding:0px;
-}
-
-.card-img{
-   float:left;
-}
-
-.card-top{
-  padding:0;
-}
-
-.card-bottom{
-   padding:0px;
+  float:right;
+  padding:0px;
 }
 
 .card-title{
@@ -154,42 +110,24 @@
   display: block;
 }
 
-.card-content{
-  float:left;
-  display: block;
-}
 
-.card-content{
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-break:break-all;border:none;
-  background-color : #FFFFFF;
 
-}
-
-.notice-confirm-button{
-  height:50px;
-  background-image: url('../assets/images/confirm-btn.png');
-}
 
 
 
 /*
 #location-img{
    float:left;
-   background: url("../../assets/images/location.png");
+   background: url("/assets/images/location.png");
 }
 
 #time-img{
    float:left;
-   background: url("../../assets/images/time.png");
+   background: url("/assets/images/time.png");
 }
 
 #favorite-img{
    float:left;
-   background: url("../../assets/images/favorite.jpg");
+   background: url("/assets/images/favorite.jpg");
 }
 */
