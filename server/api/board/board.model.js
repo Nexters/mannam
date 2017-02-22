@@ -8,9 +8,12 @@ import {Schema} from 'mongoose';
 
 var boardSchema = new mongoose.Schema({
 
+  type : String,
   boardID : String,
   writeUser : String,
   categoryList : String,
+
+  boardLocation : String,
 
   boardTitle : String,
   boardContent : String,
