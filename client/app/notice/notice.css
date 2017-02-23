@@ -27,7 +27,13 @@
 
 }
 
+
+.card-border{
+	padding:0px; 
+}
+
 .card-title-line{
+	padding:0px;
 	border-bottom: solid 2px #d7d7d7; 
 }
 
