@@ -7,6 +7,7 @@ import {Schema} from 'mongoose';
 
 var UserSchema = new Schema({
   name: String,
+
   email: {
     type: String,
     lowercase: true,
@@ -21,7 +22,18 @@ var UserSchema = new Schema({
     required: true
   },
   provider: String,
-  salt: String
+  salt: String,
+
+  /*create new schema*/
+  memberNumber : String,
+  ordinalNumber : String,
+  job : String,
+  pictureUrl : String,
+  phone : String,
+  others : String,
+
+  deviceID : String,
+  isPush : Boolean,
 });
 
 /**
