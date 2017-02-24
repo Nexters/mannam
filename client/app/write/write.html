@@ -13,25 +13,30 @@
 
     <div class="form-group">
       <p>필수 입력 정보</p>
-      <input type="text" name="name" class="form-control" ng-model="vm.notice.team" placeholder="팀 공지"
-             required/>
-      <input type="text" name="name" class="form-control" ng-model="vm.notice.whole" placeholder="전체 공지"
+      <form>
+        <select name="team" ng-model="vm.notice.team">
+                <option value="Nexters">Nexters</option>
+        </select>
+      </form>
+      <input type="text" name="title" class="form-control" ng-model="vm.notice.title" placeholder="제목"
                     required/>
+      <!-- <input type="text" name="team" class="form-control" ng-model="vm.notice.team" placeholder="팀 공지"
+             required/> -->
     </div>
 
     <div class="form-group">
       <p>옵션</p>
-      <input type="text" name="name" class="form-control" ng-model="vm.notice.date" placeholder="2017년 2월 14일"
+      <input type="text" name="date" class="form-control" ng-model="vm.notice.date" placeholder="2017년 2월 14일"
                     required/>
-      <input type="text" name="name" class="form-control" ng-model="vm.notice.position" placeholder="넥터 대강당"
+      <input type="text" name="location" class="form-control" ng-model="vm.notice.location" placeholder="넥터 대강당"
                                   required/>
-      <input type="text" name="name" class="form-control" ng-model="vm.notice.map" placeholder="넥터 대강당"
-                                                              required/>
+      <!-- <input type="text" name="name5" class="form-control" ng-model="vm.notice.map" placeholder="넥터 대강당"
+                                                              required/> -->
     </div>
 
     <div class="form-group">
       <p>내용</p>
-      <textarea name="name" rows="8" cols="80"></textarea>
+      <textarea name="content" rows="8" cols="80" ng-model="vm.notice.content"></textarea>
     </div>
 
     </form>
