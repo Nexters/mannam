@@ -1,31 +1,42 @@
 <div class="container">
 
+<form class="form" name="form" ng-submit="vm.write(form)" novalidate>
+
+
   <div class="col-lg-12 col-xs-12">
 
       <button type="button" class="col-lg-3 col-xs-3" style="width:20px; margin-left:20px; margin-right:20px;" name="button"></button>
       <p class="col-lg-6 col-xs-6" style="text-align:center">NEXTERS</p>
-      <button type="button" class="col-lg-3 col-xs-3" style="width:20px; margin-left:20px; margin-right:20px;" name="button"></button>
+      <button type="button" class="col-lg-3 col-xs-3" style="width:20px; margin-left:20px; margin-right:20px;" type="submit"></button>
 
   </div>
   <div class="clear"></div>
 
+
     <div class="form-notice">
       <p>필수 입력 정보</p>
-      <input type="text" class="form-control" placeholder="팀 공지">
-      <input type="text" class="form-control" placeholder="모임 공지">
+      <input type="text" name="name" class="form-control" ng-model="vm.notice.team" placeholder="팀 공지"
+             required/>
+      <input type="text" name="name" class="form-control" ng-model="vm.notice.whole" placeholder="전체 공지"
+                    required/>
     </div>
 
     <div class="form-option">
       <p>옵션</p>
-      <input type="text" class="form-control" placeholder="2017년 2월 11일">
-      <input type="text" class="form-control" placeholder="넥터 대강당">
-      <input type="text" class="form-control" placeholder="지도 URL">
+      <input type="text" name="name" class="form-control" ng-model="vm.notice.date" placeholder="2017년 2월 14일"
+                    required/>
+      <input type="text" name="name" class="form-control" ng-model="vm.notice.position" placeholder="넥터 대강당"
+                                  required/>
+      <input type="text" name="name" class="form-control" ng-model="vm.notice.map" placeholder="넥터 대강당"
+                                                              required/>
     </div>
 
     <div class="form-contents">
       <p>내용</p>
       <textarea name="name" rows="8" cols="80"></textarea>
     </div>
+
+    </form>
 
 </div>
 <style type="text/css">

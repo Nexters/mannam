@@ -5,7 +5,8 @@ angular.module('mannamApp')
     $stateProvider
       .state('write', {
         url: '/write',
-        templateUrl: 'app/write/write.html'
-        controller: 'WriteController'
+        templateUrl: 'app/write/write.html',
+        controller: 'WriteController',
+        controllerAs: 'vm'
       });
-  });
+  })

@@ -30,7 +30,7 @@
    .card-title-bottom{
       padding:0;
       height:43px;
-      border-bottom: solid 2px #d7d7d7; 
+      border-bottom: solid 2px #d7d7d7;
    }
 
    .card-title-bottom div{
@@ -61,7 +61,7 @@
 
    .card-content{
       font-size:14px;
-      line-height : 22.5px; 
+      line-height : 22.5px;
    }
 }
 
