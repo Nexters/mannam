@@ -19,9 +19,11 @@ write(form) {
 
   if (form.$valid) {
     alert("yes");
-    this.$http.get('/api/board/1').then(response => {
-      alert(response.data[0].boardContent);
+    this.$http.post('/api/board', { "user" : {"name" : "qweq11", "category" : "213"}, "boardTitle" : "123123", "boardContent" : "123"}).then(response => {
+    alert(response);
     });
+
+
     })
   }
 
