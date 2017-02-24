@@ -1,5 +1,4 @@
 <div class="container" ng-repeat="notice in $ctrl.notices">
-  
     <div class="card-boundary col-lg-10 col-xs-12">
 
         <div class="card-color" style = "background-color : {{ notice.type }};" ></div>
@@ -15,18 +14,18 @@
                             <div class="card-letter-title"> {{notice.title}} </div>
                         </div>
                         <div class="card-favorite col-lg-1 col-xs-1">
-                            <img class="card-favor-img" src="../assets/images/icon_favor_act.svg" aria-label="favorite">
+                            <button id="card-favor-img" class="card-favor-img" ng-click="favortoggle()" aria-label="favorite"/>
                         </div>
                     </div>
 
                     <div class="card-title-line col-lg-12 col-xs-12">
                         <div class="card-title-bottom col-lg-12 col-xs-12">
-                            <div class="col-lg-4 col-xs-4">
+                            <div class="col-lg-4 col-xs-4" ng-if ="notice.date != null">
                                 <img class="card-img" src = "../assets/images/icon_time.svg">
                                 <span class="card-letter">{{notice.date}}</span>
                             </div>
 
-                            <div class="col-lg-4 col-xs-4">
+                            <div class="col-lg-4 col-xs-4" ng-if = "notice.location != null">
                                 <img class="card-img" src = "../assets/images/icon_map_pin.svg">
                                 <span class="card-letter">{{notice.location}}</span>
                             </div>
