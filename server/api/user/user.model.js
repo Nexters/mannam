@@ -24,6 +24,8 @@ var UserSchema = new Schema({
   provider: String,
   salt: String,
 
+  category : String,
+
   /*create new schema*/
   memberNumber : String,
   ordinalNumber : String,
@@ -32,8 +34,10 @@ var UserSchema = new Schema({
   phone : String,
   others : String,
 
-  deviceID : String,
-  isPush : Boolean,
+  device : {
+    UUID : String,
+    OS : String
+  }
 });
 
 /**
