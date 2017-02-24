@@ -11,9 +11,11 @@ var boardSchema = new mongoose.Schema({
   type : String,
   color : String,
   boardID : String,
-  writeUser : String,
+  writeUser : {
+    id:String,
+    name:String
+  },
   categoryList : String,
-
   boardLocation : String,
   boardTitle : String,
   boardContent : String,

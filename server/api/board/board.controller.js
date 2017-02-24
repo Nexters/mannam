@@ -38,14 +38,7 @@ export function list(req, res, next){
 
 export function create(req, res, next){
 
-  let newBoard = new Board();
-
-  newBoard.writeUser = req.body.user.name;
-  newBoard.categoryList = req.body.user.category;
-
-  newBoard.boardTitle = req.body.boardTitle;
-  newBoard.boardContent = req.body.boardContent;
-
+  let newBoard = new Board(req.body);
 
   newBoard.save()
     .then(() => {
