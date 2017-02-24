@@ -1,6 +1,7 @@
 <div class="container" ng-repeat="notice in $ctrl.notices">
-    <div class="card-boundary col-lg-10 col-xs-12">
+    <div class="card-boundary col-lg-10 col-xs-12" ng-click="cardDetail()">
 
+        <div id="card-id">{{ notice.boardID }} </div>
         <div class="card-color" style = "background-color : {{ notice.color }};" ></div>
 
         <div class="card-title col-lg-12 col-xs-12">

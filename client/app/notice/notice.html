@@ -1,7 +1,7 @@
-<div class="container" ng-repeat="notice in $ctrl.notices">
+<div class="container">
     <div class="card-boundary col-lg-10 col-xs-12">
 
-        <div class="card-color" style = "background-color : {{ notice.type }};" ></div>
+        <div class="card-color" style = "background-color : {{ notice.color }};" ></div>
 
         <div class="card-border col-lg-12 col-xs-12">
 
@@ -10,8 +10,8 @@
 
                     <div class="card-title-top col-lg-12 col-xs-12">
                         <div class="card-title-content col-lg-11 col-xs-11">
-                            <div class="card-letter-category"> {{notice.category}} </div>
-                            <div class="card-letter-title"> {{notice.title}} </div>
+                            <div class="card-letter-category"> {{notice.categoryList}} </div>
+                            <div class="card-letter-title"> {{notice.boardTitle}} </div>
                         </div>
                         <div class="card-favorite col-lg-1 col-xs-1">
                             <button id="card-favor-img" class="card-favor-img" ng-click="favortoggle()" aria-label="favorite"/>
@@ -22,17 +22,17 @@
                         <div class="card-title-bottom col-lg-12 col-xs-12">
                             <div class="col-lg-4 col-xs-4" ng-if ="notice.date != null">
                                 <img class="card-img" src = "../assets/images/icon_time.svg">
-                                <span class="card-letter">{{notice.date}}</span>
+                                <span class="card-letter">{{notice.boardMeetingTime}}</span>
                             </div>
 
                             <div class="col-lg-4 col-xs-4" ng-if = "notice.location != null">
                                 <img class="card-img" src = "../assets/images/icon_map_pin.svg">
-                                <span class="card-letter">{{notice.location}}</span>
+                                <span class="card-letter">{{notice.boardLocation}}</span>
                             </div>
                             
                             <div class="col-lg-4 col-xs-4">
-                                <div class="card-letter-writer">{{notice.writer}}</div>
-                                <div class="card-letter-writer">{{notice.time}}</div>
+                                <div class="card-letter-writer">{{notice.writeUser.name}}</div>
+                                <div class="card-letter-writer">{{notice.boardCreateTime.default}}</div>
                             </div>
                         </div>
                     </div>       
@@ -41,7 +41,7 @@
 
             <div class="card-body col-lg-12 col-xs-12">
                 <pre class="card-content">
-{{notice.content}}
+{{notice.boardContent}}
                 </pre>
             </div>
 

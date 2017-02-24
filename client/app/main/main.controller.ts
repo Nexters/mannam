@@ -17,6 +17,11 @@ constructor($http) {
     });
   }
 
+  cardDetail(){
+    
+  }
+
+
   
 }
 

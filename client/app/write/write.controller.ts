@@ -3,7 +3,7 @@
 
 class WriteController {
 
-notice = {};
+
 errors = {};
 submitted = false;
 
@@ -11,7 +11,7 @@ submitted = false;
 constructor($http, $state) {
   this.$http = $http;
   this.$state = $state;
-
+  this.notice = {};
 }
 
 write(form) {
@@ -19,8 +19,8 @@ write(form) {
   this.submitted = true;
 
   if (form.$valid) {
-    alert("yes");
-    this.$http.post('/api/board', { "user" : {"name" : "qweq11", "category" : "213"}, "boardTitle" : "123123", "boardContent" : "bbbb"}).then(response => {
+    alert(this.notice.team);
+    this.$http.post('/api/board', { "user" : {"name" : "글쓴이", "category" : this.notice.team}, "boardTitle" : this.notice.title, "boardContent" : this.notice.content}).then(response => {
     alert(response);
     })
     .then(() => {
