@@ -28,7 +28,7 @@ export function list(req, res, next){
 
   let pageNumber = req.params.pageNumber;
 
-  Board.find().sort({"boardCreateTime" : -1}).skip(1 + ((pageNumber -1) * 4)).limit(4)
+  Board.find().sort({"boardCreateTime" : -1}).skip((pageNumber -1) * 4).limit(4)
   .then((board) => {
     res.status(200).json(board);
   })
