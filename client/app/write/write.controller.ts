@@ -19,6 +19,10 @@ write(form) {
 
   if (form.$valid) {
     alert("yes");
+    this.$http.get('/api/board/1').then(response => {
+      alert(response.data[0].boardContent);
+    });
+    })
   }
 
 }

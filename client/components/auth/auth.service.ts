@@ -69,6 +69,7 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
         }).$promise;
     },
 
+
     /**
      * Change password
      *
@@ -179,6 +180,8 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
       return $cookies.get('token');
     }
   };
+
+
 
   return Auth;
 }

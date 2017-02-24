@@ -1,0 +1,69 @@
+/*app*/
+@media screen and (max-width: 767px){
+
+	footer{
+		display: none;
+	}
+
+	.login-boundary{
+		background : url('/assets/images/bg-full.png') no-repeat;
+		margin : 0 auto;
+
+	}
+
+	.login-logo {
+		background : url('/assets/images/main-logo.svg') no-repeat; 
+		width: 193px; 
+		height: 64px; 
+		object-fit: contain;
+		margin:0 auto;
+		margin-top: 93px;
+		margin-bottom : 59px;
+	}
+
+	.login-email{
+		width: 52px; 
+		height: 19px; 
+		font-family: NotoSansKR; 
+		font-size: 13px; 
+		font-weight: 500; 
+		font-style: normal; 
+		font-stretch: normal; 
+		line-height: normal; 
+		letter-spacing: 0.4px;
+		color: #159cc1; 
+	}
+
+	.login-password{
+		width: 70px;
+		height: 19px;
+		font-family: NotoSansKR;
+		font-size: 13px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0.4px;
+		color: #159cc1;
+	}
+
+	.login-form{
+		width: 270px;
+	  	height: 40px;
+	 	border-radius: 10px;
+	  	background-color: rgba(255, 255, 255, 0.4);
+	}
+
+	.form-test{
+		width:270px;
+		margin : 0 auto;
+	}
+
+	.login-btn{
+		background : url('/assets/images/btn-login-deact.svg') no-repeat;
+		width: 270px;
+  		height: 50px;
+  		object-fit: contain;
+	}
+
+}
