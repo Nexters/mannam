@@ -1,8 +1,3 @@
-<div class="container2">
-<p class="test" ng-repeat"todo in todos">
-  <input type="text" ng-model="todo" class="form-control">
-</p>
-</div>
 <div class="container" ng-repeat="notice in $ctrl.notices">
     <div class="card-boundary col-lg-10 col-xs-12">
 
@@ -16,7 +11,7 @@
                         <div class="card-letter-title"> {{notice.title}} </div>
                     </div>
                     <div class="card-favorite col-lg-1 col-xs-1">
-                        <img class="card-favor-img" src="../assets/images/icon_favor_deact.svg" aria-label="favorite">
+                        <img id="card-favor-img" class="card-favor-img" aria-label="favorite">
                     </div>
                 </div>
 
